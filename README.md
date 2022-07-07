@@ -1,4 +1,4 @@
-# Example of how to attach an image ta a JAR file
+# Example of how to attach an image to a JAR file
 
 This example shows how to create an image which has an attached `jar` file.
 

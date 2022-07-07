@@ -1,0 +1,21 @@
+# https://taskfile.dev
+
+version: '3'
+
+silent: true
+
+tasks:
+
+  default:
+    cmds:
+      - task: generate-image
+      - task: execute-image
+
+  generate-image:
+    cmds:
+      - tools/createjar.sh
+      - tools/combine-image-and-jar.sh
+
+  execute-image:
+    cmds:
+      - java -jar dist/generated.png
